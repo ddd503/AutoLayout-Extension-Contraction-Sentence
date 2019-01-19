@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,95 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout_Extension_Contraction_Sentence" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-7x-IIr" userLabel="BaseView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="StX-ip-5Ie">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eln-eT-04z" userLabel="ImageContinerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Eln-eT-04z" secondAttribute="height" multiplier="375:250" id="4vk-uc-KS4"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nZy-ba-nsw">
+                                                <rect key="frame" x="20" y="326.5" width="335" height="338.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">以下ウィキペディア引用
+
+鵠沼海岸は、神奈川県藤沢市の町名。現行行政町名は鵠沼海岸一丁目から鵠沼海岸七丁目。住居表示実施済み区域[5]。郵便番号は251-0037（藤沢郵便局管区）。
+かつては、鵠沼地区の相模湾に面する海岸部という意味の地名であった。狭義には、1964年（昭和39年）および1965年（昭和40年）に実施した住居表示により、小田急江ノ島線以南の地域を指す。
+日本のサーフィン、ビーチバレーをはじめ、多くのビーチスポーツの発祥の地と自称している。
+
+地理
+東に江の島、西に富士山を望む海岸で、幅100〜150mの広大な砂浜が続いている。鵠沼運動公園、湘南海岸公園、鵠沼海浜公園、片瀬西浜・鵠沼海水浴場がある。
+小田急江ノ島線鵠沼海岸駅が最寄である。
+
+地名と範囲
+「鵠沼海岸」の地名は新旧2段階がある。
+江戸時代までは鵠沼の海岸部は完全な無人地帯だったので、地曳き網の漁場だった浜辺を鰯干場（ヤシバ）と呼んでいた記録がある程度である。
+1886年（明治19年）に「鵠沼海岸海水浴場」が開設された。これが「鵠沼海岸」の地名が使われた最初の例である。ほどなく現在の鵠沼松が岡を中心に「鵠沼海岸別荘地」が開発され、分譲された。この分譲地は鵠沼藤が谷の南部までを含む。北端は1902年（明治35年）に開通する江ノ島電鉄鵠沼駅付近までで、ここから浜辺までを鵠沼海岸と呼ぶようになった。
+1929年（昭和4年）、小田急江ノ島線が開通し、鵠沼海岸駅が開業すると、駅から徒歩圏内が鵠沼海岸と認識されるようになった
+1940年（昭和15年）藤沢市制が敷かれた頃、町内会制度が整備され、鵠沼海岸駅東側を通る通称「学園通り」以西を「鵠沼西海岸」、以東を「海岸通り」の「藤ヶ谷橋（現在は暗渠化）」を境にして北側を「鵠沼東海岸」、南側を「鵠沼南海岸」、と呼び、商店街の組合や警防団組織も分かれていた。
+この段階までの鵠沼海岸とは「本村」に対する鵠沼の「新開地」というような意味を持っていた。
+藤沢市は、1964年（昭和39年）8月1日に鵠沼海岸1 - 4丁目の、1965年（昭和40年）10月1日に鵠沼海岸5 - 7丁目の住居表示を実施した。これにより、小田急江ノ島線を境界として、浜辺までを鵠沼海岸と呼ぶことになった。1 - 4丁目は文字通り海岸部で、かつての鵠沼海岸の南部に当たり、5 - 7丁目は大庭御厨以来の伝統を持つ地域に当たる。</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="sunset" translatesAutoresizingMaskIntoConstraints="NO" id="QTX-6L-2sR">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鵠沼海岸(くげぬまかいがん)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmC-zm-XRQ">
+                                                <rect key="frame" x="20" y="280" width="335" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Eln-eT-04z" secondAttribute="trailing" id="0a6-mq-ew9"/>
+                                            <constraint firstAttribute="trailing" secondItem="GmC-zm-XRQ" secondAttribute="trailing" constant="20" id="1VE-Mr-FhZ"/>
+                                            <constraint firstItem="QTX-6L-2sR" firstAttribute="leading" secondItem="Eln-eT-04z" secondAttribute="leading" id="6lB-Se-fzA"/>
+                                            <constraint firstItem="nZy-ba-nsw" firstAttribute="leading" secondItem="StX-ip-5Ie" secondAttribute="leading" constant="20" id="7ed-xG-bl6"/>
+                                            <constraint firstItem="GmC-zm-XRQ" firstAttribute="top" secondItem="Eln-eT-04z" secondAttribute="bottom" constant="30" id="Dvc-Ry-mlM"/>
+                                            <constraint firstAttribute="trailing" secondItem="nZy-ba-nsw" secondAttribute="trailing" constant="20" id="KdY-Wo-EUp"/>
+                                            <constraint firstItem="QTX-6L-2sR" firstAttribute="trailing" secondItem="Eln-eT-04z" secondAttribute="trailing" id="MM9-QM-HWL"/>
+                                            <constraint firstItem="QTX-6L-2sR" firstAttribute="bottom" secondItem="Eln-eT-04z" secondAttribute="bottom" id="QaA-k8-tQ1"/>
+                                            <constraint firstItem="Eln-eT-04z" firstAttribute="top" secondItem="StX-ip-5Ie" secondAttribute="top" id="R6j-a7-OEQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="nZy-ba-nsw" secondAttribute="bottom" constant="20" id="VTh-gF-RLd"/>
+                                            <constraint firstItem="GmC-zm-XRQ" firstAttribute="leading" secondItem="StX-ip-5Ie" secondAttribute="leading" constant="20" id="fur-LI-CO2"/>
+                                            <constraint firstItem="QTX-6L-2sR" firstAttribute="height" relation="greaterThanOrEqual" secondItem="Eln-eT-04z" secondAttribute="height" id="ipM-lU-iKq"/>
+                                            <constraint firstItem="nZy-ba-nsw" firstAttribute="top" secondItem="GmC-zm-XRQ" secondAttribute="bottom" constant="20" id="mvV-sa-Qzx"/>
+                                            <constraint firstItem="Eln-eT-04z" firstAttribute="leading" secondItem="StX-ip-5Ie" secondAttribute="leading" id="qMH-RE-6Ti"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="StX-ip-5Ie" secondAttribute="bottom" id="Ao3-RA-obk"/>
+                                    <constraint firstItem="StX-ip-5Ie" firstAttribute="leading" secondItem="x6Z-7x-IIr" secondAttribute="leading" id="Fr0-6e-uMf"/>
+                                    <constraint firstItem="QTX-6L-2sR" firstAttribute="top" secondItem="x6Z-7x-IIr" secondAttribute="top" priority="750" id="VS5-Oo-Db1"/>
+                                    <constraint firstAttribute="trailing" secondItem="StX-ip-5Ie" secondAttribute="trailing" id="a7S-sX-abP"/>
+                                    <constraint firstItem="StX-ip-5Ie" firstAttribute="top" secondItem="x6Z-7x-IIr" secondAttribute="top" id="eZN-oW-09z"/>
+                                    <constraint firstItem="Eln-eT-04z" firstAttribute="leading" secondItem="x6Z-7x-IIr" secondAttribute="leading" id="esL-XB-4m3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eln-eT-04z" secondAttribute="trailing" id="uIe-Xe-rCP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x6Z-7x-IIr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZoP-PL-S6C"/>
+                            <constraint firstItem="x6Z-7x-IIr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fdw-jS-xHy"/>
+                            <constraint firstItem="x6Z-7x-IIr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nnE-ar-UYo"/>
+                            <constraint firstItem="x6Z-7x-IIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vIw-HI-f5v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +109,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="sunset" width="500" height="375"/>
+    </resources>
 </document>
