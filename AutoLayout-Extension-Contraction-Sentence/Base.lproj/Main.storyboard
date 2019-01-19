@@ -32,19 +32,19 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iYn-vs-XzK">
-                                                <rect key="frame" x="20" y="326.5" width="335" height="300"/>
+                                                <rect key="frame" x="20" y="326.5" width="335" height="200"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-E1-PrF" userLabel="TextViewContiner">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="300"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="200"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="vwr-kK-EYd"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="vwr-kK-EYd"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
                                             </stackView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nZy-ba-nsw">
-                                                <rect key="frame" x="20" y="326.5" width="335" height="300"/>
+                                                <rect key="frame" x="20" y="326.5" width="335" height="200"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <mutableString key="text">以下ウィキペディア引用
 
@@ -75,9 +75,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87l-k0-8HA">
-                                                <rect key="frame" x="20" y="626.5" width="335" height="50"/>
+                                                <rect key="frame" x="20" y="526.5" width="335" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="FOt-R1-FRi"/>
+                                                    <constraint firstAttribute="height" constant="30" id="FOt-R1-FRi"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <state key="normal" title="もっと見る"/>
